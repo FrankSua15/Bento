@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    padding: 64px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos del perfil */
+.perfil_container {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 412px;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.perfil_container img {
+    width: 184px;
+    height: 184px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.perfil_container h1 {
+    font-size: 44px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 52.8px;
+    margin-bottom: 20px;
+}
+
+.perfil_container p {
+    font-size: 20px;
+    font-weight: regular;
+    color: #565656;
+    line-height: 28px;
+}
+
+/* Estilos del hero */
+.info_container {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 492px;
+    flex-direction: column;
+    width: 820px;
+    height: 100vh;
+    /* background-color: #768CFF; */
+}
+
+/* Estilos de la tarjeta Acerca de mí */
+.card_aboutme {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    text-align: justify;
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 23px;
+    border: #b6b6b656 1px solid;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+    margin-bottom: 32px;
+}
+
+.card_aboutme p {
+    font-size: 16px;
+    color: #565656;
+    padding-right: 20px;
+}
+
+.card_aboutme img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos de la seccion de proyectos */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0 20px;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 200px;
+}
+
+.projects_title {
+    grid-row-start: 1;
+    grid-column: span 2;
+}
+
+/* Estilos de la tarjeta de la to do app*/
+.card_project_todoapp {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 130px;
+    text-align: end;
+    background-color: #fff;
+    gap: 30px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 23px;
+    border: #b6b6b656 1px solid;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+}
+
+.card_project_todoapp:hover {
+    background-color: #b6b6b626;
+}
+
+.card_project_todoapp img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card_project_todoapp p {
+    font-size: 16px;
+    color: #565656;
+}
+
+.card_project_todoapp a {
+    font-size: 16px;
+    color: #c6c6ca;
+    text-decoration: none;
+}
+
+/* Estilos de la tarjeta del website*/
+.card_project_website {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 130px;
+    text-align: end;
+    background-color: #fff;
+    gap: 30px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 23px;
+    border: #b6b6b656 1px solid;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+}
+
+.card_project_website:hover {
+    background-color: #b6b6b626;
+}
+
+.card_project_website img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card_project_website p {
+    font-size: 16px;
+    color: #565656;
+}
+
+.card_project_website a {
+    font-size: 16px;
+    color: #c6c6ca;
+    text-decoration: none;
+}
+
+/* Estilos de la seccion de links */
+.info_container_media {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.card_links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0 20px;
+    width: 100%;
+}
+
+.card_links_title {
+    grid-row-start: 1;
+    grid-column: span 2;
+}
+
+/* Estilos de la tarjeta de github*/
+.card_links_github {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: #dbdbdb3b;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 23px;
+    border: #b6b6b656 1px solid;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+}
+
+.card_links_github:hover {
+    background-color: #dbdbdb8c;
+}
+
+.card_links_github img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.card_links_github p {
+    font-size: 16px;
+    color: #000;
+    margin: 10px 0;
+}
+
+.card_links_github input {
+    width: 80px;
+    height: auto;
+    border: 1px solid #b6b6b656;
+    background: #dbdbdb;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+
+.card_links_github input:hover {
+    background-color: #b6b6b680;
+}
+
+/* Estilos de la tarjeta de linkedin*/
+.card_links_linkedin {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: #0077B520;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 23px;
+    border: #b6b6b656 1px solid;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+}
+
+.card_links_linkedin:hover {
+    background-color: #0077B538;
+}
+
+.card_links_linkedin img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.card_links_linkedin p {
+    font-size: 16px;
+    color: #000;
+    margin: 10px 0;
+}
+
+.card_links_linkedin input {
+    width: 80px;
+    height: auto;
+    border: 1px solid #b6b6b656;
+    background: #dbdbdb;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+
+.card_links_linkedin input:hover {
+    background-color: #b6b6b680;
+}
+
+/* Estilos de la tarjeta de youtube*/
+.card_links_youtube {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: #c4302b20;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 23px;
+    border: #b6b6b656 1px solid;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+}
+
+.card_links_youtube:hover {
+    background-color: #c4302b30;
+}
+
+.card_links_youtube img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.card_links_youtube p {
+    font-size: 16px;
+    color: #000;
+    margin: 10px 0;
+}
+
+.card_links_youtube input {
+    width: 80px;
+    height: auto;
+    border: 1px solid #b6b6b656;
+    background: #dbdbdb;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+
+.card_links_youtube input:hover {
+    background-color: #b6b6b68c;
+}
+
+/* Estilos de la tarjeta de instagram*/
+.card_links_instagram {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: #833AB435;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 23px;
+    border: #b6b6b656 1px solid;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.card_links_instagram:hover {
+    background-color: #833AB450;
+}
+
+.card_links_instagram img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.card_links_instagram p {
+    font-size: 16px;
+    color: #000;
+    margin: 10px 0;
+}
+
+.card_links_instagram input {
+    width: 80px;
+    height: auto;
+    border: 1px solid #b6b6b656;
+    background: #dbdbdb;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+
+.card_links_instagram input:hover {
+    background-color: #b6b6b68c;
+}
+
+/* Estilos de la seccion de hobbies */
+.card_hobbies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+    height: 472px;
+    margin-top: 20px;
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 23px;
+    border: #b6b6b656 1px solid;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.card_hobbies img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card_hobbies_movies img {
+    height: 120px;
+}
+
+.card_hobbies p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #565656;
+}
+
+/* Estilos del footer */
+footer {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    background-color: #fff;
+    padding: 0 64px;
+}
+
+footer input {
+    width: 268px;
+    height: 44px;
+    position: relative;
+    border: 1px solid #768CFF;
+    background: #768CFF;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+
