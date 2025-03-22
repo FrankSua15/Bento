@@ -67,7 +67,6 @@ main {
     flex-direction: column;
     width: 820px;
     height: 100vh;
-    /* background-color: #768CFF; */
 }
 
 /* Estilos de la tarjeta Acerca de mí */
@@ -87,7 +86,7 @@ main {
 }
 
 .card_aboutme p {
-    font-size: 16px;
+    font-size: 20px;
     color: #565656;
     padding-right: 20px;
 }
