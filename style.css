@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
 
 * {
     margin: 0;
@@ -6,11 +6,25 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: regular;
+    src: url(./Assets/Fonts/Inter/Inter_18pt-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    src: url(./Assets/Fonts/Inter/Inter_18pt-Bold.ttf);
+}
+
 main {
     display: flex;
     height: 100vh;
     padding: 64px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Estilos del perfil */
