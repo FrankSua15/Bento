@@ -19,3 +19,8 @@ document.getElementById("button_youtube").addEventListener("click", function () 
 document.getElementById("button_instagram").addEventListener("click", function () {
     window.open("https://www.instagram.com/frankmfc17/");
 });
+
+// Evento de click al boton cotact me
+document.getElementById("form_contact").addEventListener("click", function () {
+    window.open("https://mail.google.com/mail/?view=cm&fs=1&to=frankosua@gmail.com&su=Contact Bento&body=Hi Francisco, I would like to contact you for...");
+});
